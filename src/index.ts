@@ -1,5 +1,4 @@
 import assign from "lodash.assign";
-import isArray from "lodash.isarray";
 import mapValues from "lodash.mapvalues";
 import merge from "lodash.merge";
 
@@ -72,7 +71,7 @@ function fmapMultiple<T, R>(
   if (!data) {
     return undefined;
     // Array Case
-  } else if (isArray(data)) {
+  } else if (Array.isArray(data)) {
     return data.map(transform);
     // Single Case
   } else {
