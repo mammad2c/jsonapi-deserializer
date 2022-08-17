@@ -6,6 +6,7 @@
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
+    "esModuleInterop": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "outDir": "es5",
@@ -13,9 +14,6 @@
     "strictNullChecks": true,
     "target": "es5"
   },
-  "include": [
-    "src/**/*.ts",
-    "spec/**/*.ts"
-  ],
+  "include": ["src/**/*.ts", "spec/**/*.ts"],
   "exclude": ["node_modules"]
 }

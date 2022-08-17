@@ -1,17 +1,17 @@
 language: node_js
 
 node_js:
-    - "5.0"
+  - "5.0"
 
 # Libraries install and database migration
 install:
-    - npm install
+  - npm install
 
 script: npm test
 
 # Branches white list
 branches:
-    - only:
-        - master
-        - develop
-        - testing
+  - only:
+      - master
+      - develop
+      - testing
